@@ -1,123 +1,396 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MASROUR Abdelhafid — Portfolio IA</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Inter',sans-serif;background:#0d1117;color:#e6edf3;line-height:1.6}
-    nav{padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #30363d}
-    nav .logo{font-weight:700;color:#58a6ff}
-    nav a{color:#8b949e;text-decoration:none;margin-left:1.5rem;font-size:14px}
-    nav a:hover{color:#e6edf3}
-    .hero{text-align:center;padding:5rem 2rem 3rem}
-    .hero h1{font-size:2.8rem;font-weight:700;margin-bottom:1rem}
-    .hero h1 span{color:#58a6ff}
-    .hero p{color:#8b949e;font-size:1.1rem;max-width:600px;margin:0 auto 2rem}
-    .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
-    .badge{background:#161b22;border:1px solid #30363d;border-radius:20px;padding:6px 16px;font-size:13px;color:#58a6ff}
-    .btn{display:inline-block;background:#238636;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:500;margin:5px}
-    .btn-outline{background:transparent;border:1px solid #30363d;color:#e6edf3}
-    section{max-width:1100px;margin:0 auto;padding:3rem 2rem}
-    h2{font-size:1.5rem;font-weight:600;margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid #30363d}
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem}
-    .card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:1.5rem;transition:border-color .2s}
-    .card:hover{border-color:#58a6ff}
-    .card h3{font-size:1rem;font-weight:600;margin-bottom:0.5rem}
-    .card p{color:#8b949e;font-size:13px;margin-bottom:1rem}
-    .tags{display:flex;flex-wrap:wrap;gap:6px}
-    .tag{background:#0d1117;border:1px solid #30363d;border-radius:4px;padding:2px 8px;font-size:11px;color:#8b949e}
-    .skills{display:flex;flex-wrap:wrap;gap:10px}
-    .skill{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:8px 16px;font-size:13px}
-    footer{text-align:center;padding:2rem;border-top:1px solid #30363d;color:#8b949e;font-size:13px}
-    a.card-link{text-decoration:none;color:inherit;display:block}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelhafid Masrour | AI & Data Science Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<nav>
-  <span class="logo">&lt;MASROUR /&gt;</span>
-  <div>
-    <a href="#projets">Projets</a>
-    <a href="#competences">Compétences</a>
-    <a href="https://www.linkedin.com/in/abdelhafid-MASROUR" target="_blank">LinkedIn</a>
-    <a href="https://github.com/MASROUR-Abdelhafid" target="_blank">GitHub</a>
-  </div>
-</nav>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">AM<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#expertise">Comp&eacute;tences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#experience">Parcours</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="hero">
-  <h1>Abdelhafid <span>MASROUR</span></h1>
-  <p>Étudiant en Intelligence Artificielle & Data Science — passionné par le RAG, le NLP et le Computer Vision</p>
-  <div class="badges">
-    <span class="badge">🤖 RAG & LLM</span>
-    <span class="badge">🧠 NLP</span>
-    <span class="badge">🖼️ Computer Vision</span>
-    <span class="badge">📊 Data Science</span>
-    <span class="badge">🇲🇦 Maroc</span>
-  </div>
-  <a href="https://github.com/MASROUR-Abdelhafid" class="btn" target="_blank">GitHub</a>
-  <a href="https://www.linkedin.com/in/abdelhafid-MASROUR" class="btn btn-outline" target="_blank">LinkedIn</a>
-</div>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">AI / Data Science Student</span>
+                <h1>Abdelhafid Masrour</h1>
+                <h2 style="font-size: 1.5rem; color: var(--text-muted); margin-bottom: 1.5rem;">Master Machine Learning Avanc&eacute; et Applications</h2>
+                <p>
+                    Passionn&eacute; par la r&eacute;solution de d&eacute;fis complexes gr&acirc;ce &agrave; l'intelligence artificielle. 
+                    Fort d'une expertise en <strong>mod&eacute;lisation pr&eacute;dictive</strong> et en <strong>analyse statistique</strong>, 
+                    j'&eacute;labore des strat&eacute;gies bas&eacute;es sur les donn&eacute;es pour r&eacute;pondre &agrave; des probl&eacute;matiques concr&egrave;tes. 
+                    Mon portfolio illustre ma capacit&eacute; &agrave; ma&icirc;triser les technologies de pointe (<strong>LLMs</strong>, <strong>Computer Vision</strong>) pour cr&eacute;er de la valeur tangible.
+                </p>
+                                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">Voir mes travaux</a>
+                    <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/abdelhafidmasrour" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="photo.png" alt="Abdelhafid Masrour">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="projets">
-  <h2>🚀 Projets phares</h2>
-  <div class="projects">
-    <a class="card-link" href="https://github.com/MASROUR-Abdelhafid/Prof-Bot-RAG" target="_blank">
-      <div class="card">
-        <h3>🤖 Prof-Bot-RAG</h3>
-        <p>Chatbot éducatif RAG 100% local. Posez des questions sur vos PDF de cours et obtenez des réponses sourcées, sans connexion Internet.</p>
-        <div class="tags"><span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">Flask</span></div>
-      </div>
-    </a>
-    <a class="card-link" href="https://github.com/MASROUR-Abdelhafid/MMCTR_Grandmaster_Solution" target="_blank">
-      <div class="card">
-        <h3>🏆 MMCTR Grandmaster Solution</h3>
-        <p>Solution de niveau Grandmaster à une compétition Kaggle de prédiction du taux de clics (CTR Prediction).</p>
-        <div class="tags"><span class="tag">Kaggle</span><span class="tag">CTR</span><span class="tag">Machine Learning</span><span class="tag">Feature Engineering</span></div>
-      </div>
-    </a>
-    <a class="card-link" href="https://github.com/MASROUR-Abdelhafid/Image-Processing-Project" target="_blank">
-      <div class="card">
-        <h3>🖼️ Image Processing Project</h3>
-        <p>Projet de traitement et d'analyse d'images : filtres, segmentation et détection d'objets avec Python.</p>
-        <div class="tags"><span class="tag">OpenCV</span><span class="tag">Python</span><span class="tag">Computer Vision</span><span class="tag">Deep Learning</span></div>
-      </div>
-    </a>
-    <a class="card-link" href="https://github.com/MASROUR-Abdelhafid/IDS_Cognitif_Project" target="_blank">
-      <div class="card">
-        <h3>🧠 IDS Cognitif Project</h3>
-        <p>Système de détection d'intrusion basé sur des approches cognitives et l'apprentissage automatique.</p>
-        <div class="tags"><span class="tag">Cybersécurité</span><span class="tag">Anomaly Detection</span><span class="tag">ML</span><span class="tag">Python</span></div>
-      </div>
-    </a>
-  </div>
-</section>
+    <section id="expertise" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comp&eacute;tences Techniques</h2>
+                <p>Un profil technique complet couvrant l'ensemble du cycle de vie de la donn&eacute;e.</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expert-card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Langages</h3>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>JAVA</span>
+                        <span>C</span>
+                        <span>SQL</span>
+                        <span>Bash/Shell</span>
+                    </div>
+                </div>
 
-<section id="competences">
-  <h2>🛠️ Compétences techniques</h2>
-  <div class="skills">
-    <span class="skill">🐍 Python</span>
-    <span class="skill">🤗 HuggingFace</span>
-    <span class="skill">⛓️ LangChain</span>
-    <span class="skill">🦙 Ollama</span>
-    <span class="skill">🗄️ ChromaDB</span>
-    <span class="skill">🔥 PyTorch</span>
-    <span class="skill">📊 TensorFlow</span>
-    <span class="skill">🧮 scikit-learn</span>
-    <span class="skill">🐼 Pandas</span>
-    <span class="skill">🌐 Flask</span>
-    <span class="skill">👁️ OpenCV</span>
-    <span class="skill">📓 Jupyter</span>
-    <span class="skill">🐙 Git & GitHub</span>
-  </div>
-</section>
+                <div class="expert-card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>ML / DL / NLP</h3>
+                    <div class="tags">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                        <span>SAFAR (Arabic NLP)</span>
+                        <span>TF-IDF</span>
+                        <span>Information Retrieval</span>
+                    </div>
+                </div>
 
-<footer>
-  <p>© 2026 MASROUR Abdelhafid — Fait avec ❤️ depuis le Maroc 🇲🇦</p>
-</footer>
+                <div class="expert-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3>GenAI & LLMs</h3>
+                    <div class="tags">
+                        <span>RAG</span>
+                        <span>LangChain</span>
+                        <span>Ollama</span>
+                        <span>AI Agents</span>
+                        <span>Sentence-Transformers</span>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="card-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend & Data</h3>
+                    <div class="tags">
+                        <span>FastAPI</span>
+                        <span>Flask</span>
+                        <span>SparkJava</span>
+                        <span>ChromaDB</span>
+                        <span>Cassandra</span>
+                        <span>Neo4j</span>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Analyse & Visualization</h3>
+                    <div class="tags">
+                        <span>Pandas</span>
+                        <span>Numpy</span>
+                        <span>Power BI</span>
+                        <span>MDX</span>
+                        <span>Grafana</span>
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Outils & DevOps</h3>
+                    <div class="tags">
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>CI/CD (GitHub Actions)</span>
+                        <span>MLflow</span>
+                        <span>Prometheus</span>
+                        <span>Maven</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projets</h2>
+                <p>R&eacute;alisations techniques et d&eacute;veloppement de solutions innovantes.</p>
+            </div>
+
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/MASROUR-Abdelhafid" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Syst&egrave;me de Recommandation E-commerce</h3>
+                        <p class="project-desc">
+                            (DevOps & MLOps) Conception et d&eacute;ploiement "End-to-End" d'une architecture micro-services.
+                            Impl&eacute;mentation CI/CD (GitHub Actions), orchestration Kubernetes (Rolling Update, Auto-scaling) et tracking MLflow.
+                        </p>
+                        <ul class="tech-list">
+                            <li>FastAPI</li>
+                            <li>Kubernetes</li>
+                            <li>MLflow</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/MASROUR-Abdelhafid/MMCTR_Grandmaster_Solution" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Pr&eacute;diction de CTR Multimodale</h3>
+                        <p class="project-desc">
+                            Challenge WWW 2025. D&eacute;veloppement d'un syst&egrave;me hybride (Deep Interest Network Enhanced) pour micro-vid&eacute;os.
+                            Feature Engineering avanc&eacute;, entra&icirc;nement GPU. Score AUC de 0.91.
+                        </p>
+                        <ul class="tech-list">
+                            <li>Deep Learning</li>
+                            <li>Python</li>
+                            <li>RecSys</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-comments"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/MASROUR-Abdelhafid/Prof-Bot-RAG" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Assistant RAG Local</h3>
+                        <p class="project-desc">
+                            Chatbot &eacute;ducatif interrogeant des PDF de cours. Architecture 100% locale avec Ollama (Llama 3.2), LangChain et ChromaDB.
+                            Interface web interactive avec Flask.
+                        </p>
+                        <ul class="tech-list">
+                            <li>GenAI</li>
+                            <li>Ollama</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-search"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/MASROUR-Abdelhafid" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Moteur de Recherche S&eacute;mantique (Arabe)</h3>
+                        <p class="project-desc">
+                            D&eacute;velopp&eacute; "from scratch" en Java. Algorithmes TF-IDF et Similarit&eacute; Cosinus manuels.
+                            Pipeline NLP avanc&eacute; (SAFAR) pour l'arabe. API REST avec SparkJava.
+                        </p>
+                        <ul class="tech-list">
+                            <li>Java</li>
+                            <li>NLP</li>
+                            <li>SparkJava</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-image"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/MASROUR-Abdelhafid/Image-Processing-Project" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Image Processing</h3>
+                        <p class="project-desc">
+                            Techniques d'am&eacute;lioration (filtres), d&eacute;tection de contours (Canny, Sobel...), analyse Fourier et morphologie math&eacute;matique.
+                            Extraction de points cl&eacute;s (Harris, SUSAN) et Hough Transform.
+                        </p>
+                        <ul class="tech-list">
+                            <li>OpenCV</li>
+                            <li>Python</li>
+                            <li>Fourier</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-smile"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/MASROUR-Abdelhafid" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Reconnaissance d'&Eacute;motions (Tweets)</h3>
+                        <p class="project-desc">
+                            D&eacute;veloppement d'un mod&egrave;le NLP (LSTM bidirectionnel) sous TensorFlow.
+                            Pr&eacute;traitement complet : tokenisation, vectorisation, padding.
+                        </p>
+                        <ul class="tech-list">
+                            <li>TensorFlow</li>
+                            <li>NLP</li>
+                            <li>LSTM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-home"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/MASROUR-Abdelhafid/pricePrediction" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Analyse pr&eacute;dictive immobilier</h3>
+                        <p class="project-desc">
+                            Mod&eacute;lisation du prix des biens immobiliers (R&eacute;gression, XGBoost).
+                            &Eacute;valuation via RMSE, MAE, R&sup2; et visualisation des donn&eacute;es.
+                        </p>
+                        <ul class="tech-list">
+                            <li>XGBoost</li>
+                            <li>Regression</li>
+                            <li>Data Viz</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certifications</h2>
+                <p>Validations de comp&eacute;tences et apprentissage continu.</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expert-card" style="padding: 1.5rem;">
+                    <h3><i class="fas fa-certificate" style="color: var(--accent); margin-right: 10px;"></i> Oracle Cloud</h3>
+                    <p>Infrastructure 2025 AI Foundations Associate</p>
+                </div>
+                <div class="expert-card" style="padding: 1.5rem;">
+                    <h3><i class="fas fa-certificate" style="color: var(--accent); margin-right: 10px;"></i> TensorFlow</h3>
+                    <p>Tweet Emotion Recognition (Coursera)</p>
+                </div>
+                <div class="expert-card" style="padding: 1.5rem;">
+                    <h3><i class="fas fa-certificate" style="color: var(--accent); margin-right: 10px;"></i> IBM</h3>
+                    <p>Tools for Data Science (Coursera)</p>
+                </div>
+                <div class="expert-card" style="padding: 1.5rem;">
+                    <h3><i class="fas fa-certificate" style="color: var(--accent); margin-right: 10px;"></i> Neo4j</h3>
+                    <p>Graph Data Science Fundamentals</p>
+                </div>
+                <div class="expert-card" style="padding: 1.5rem;">
+                    <h3><i class="fas fa-certificate" style="color: var(--accent); margin-right: 10px;"></i> Quantium</h3>
+                    <p>Data Analytics Job Simulation (Forage)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <div class="split-layout">
+                
+                <div class="column">
+                    <h3 class="column-title"><i class="fas fa-briefcase"></i> Exp&eacute;riences Professionnelles</h3>
+                    
+                    <div class="resume-item">
+                        <span class="date">Juin 2025 - Ao&ucirc;t 2025</span>
+                        <h4>Stage (Web Scraping, Data Science)</h4>
+                        <span class="company">SMART MAINT SARL AU, Casablanca</span>
+                        <p>Analyse du potentiel du march&eacute; pour les formations en ligne en maintenance et fiabilit&eacute; des &eacute;quipements et des sites industriels.</p>
+                    </div>
+
+                    <div class="resume-item">
+                        <span class="date">Avr. 2024 - Juin 2024</span>
+                        <h4>Stage (software engineer)</h4>
+                        <span class="company">FS TETOUAN, Tetouan</span>
+                        <p>R&eacute;alisation d'une plateforme num&eacute;rique centralis&eacute;e pour g&eacute;rer efficacement les activit&eacute;s scolaires d'un &eacute;tablissement.</p>
+                        <ul style="list-style: disc; margin-left: 1.2rem; margin-top: 0.5rem; color: #9ca3af; font-size: 0.9rem;">
+                            <li>Num&eacute;risation des processus administratifs et p&eacute;dagogiques.</li>
+                            <li>Facilitation de la communication et renforcement de la tra&ccedil;abilit&eacute;.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="column-title"><i class="fas fa-university"></i> &Eacute;ducation</h3>
+                    
+                    <div class="resume-item">
+                        <span class="date">2026</span>
+                        <h4>Master Machine Learning Avanc&eacute; et Applications</h4>
+                        <span class="company">FSDM, Fes</span>
+                    </div>
+
+                    <div class="resume-item">
+                        <span class="date">2024</span>
+                        <h4>Licence LST G&eacute;nie Informatique</h4>
+                        <span class="company">FST, Fes</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <h2>Contactez-moi</h2>
+            <a href="mailto:abdelhafidmasrour@gmail.com" class="email-link">abdelhafidmasrour@gmail.com</a>
+            
+
+            
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/abdelhafid-masrour" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MASROUR-Abdelhafid" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Abdelhafid Masrour. Tous droits r&eacute;serv&eacute;s.
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
