@@ -3,89 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdelhafid Masrour | AI &amp; Data Science Engineer</title>
-    <meta name="description" content="Portfolio d'Abdelhafid Masrour — AI & Data Science. Machine Learning, GenAI (RAG/LLM), Computer Vision et MLOps.">
+    <title>Abdelhafid Masrour — AI &amp; Data Science Engineer</title>
+    <meta name="description" content="Abdelhafid Masrour — AI & Data Science Engineer. Machine Learning, GenAI (RAG/LLM), Computer Vision et MLOps.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Barre de progression scroll -->
     <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Fond aurora animé -->
-    <div class="aurora">
-        <div class="aurora-blob blob-1"></div>
-        <div class="aurora-blob blob-2"></div>
-        <div class="aurora-blob blob-3"></div>
-    </div>
 
     <!-- ===== HEADER ===== -->
     <header class="header">
         <div class="container nav-container">
-            <a href="#" class="logo">AM<span>.</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#expertise">Compétences</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#experience">Parcours</a></li>
-                    <li><a href="#contact" class="btn-nav">Contact</a></li>
-                </ul>
+            <a href="#" class="logo">Abdelhafid Masrour<span>®</span></a>
+            <nav class="nav-links">
+                <a href="#expertise"><span class="nav-idx">01</span> Compétences</a>
+                <a href="#projects"><span class="nav-idx">02</span> Projets</a>
+                <a href="#certifications"><span class="nav-idx">03</span> Certifs</a>
+                <a href="#experience"><span class="nav-idx">04</span> Parcours</a>
+                <a href="#contact" class="btn-nav">Contact <i class="fas fa-arrow-right"></i></a>
             </nav>
         </div>
     </header>
 
     <!-- ===== HERO ===== -->
     <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <span class="badge"><i class="fas fa-sparkles"></i> AI / Data Science Engineer</span>
-                <h1>Abdelhafid <span class="gradient-name">Masrour</span></h1>
-                <h2 class="hero-subtitle">Master Machine Learning Avancé &amp; Applications</h2>
-                <p>
-                    Je conçois des solutions intelligentes qui transforment la donnée en valeur.
-                    Expert en <strong>modélisation prédictive</strong>, <strong>GenAI</strong> et <strong>MLOps</strong>,
-                    je maîtrise l'ensemble du cycle — de la recherche au déploiement de modèles en production
-                    (<strong>LLMs</strong>, <strong>RAG</strong>, <strong>Computer Vision</strong>).
-                </p>
-                <div class="cta-group">
-                    <a href="#projects" class="btn btn-primary magnetic">Explorer mes projets</a>
-                    <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" class="btn btn-outline magnetic"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://linkedin.com/in/abdelhafid-masrour" target="_blank" class="btn btn-outline magnetic"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat"><span class="stat-num" data-target="8">0</span><small>Projets</small></div>
-                    <div class="stat-divider"></div>
-                    <div class="stat"><span class="stat-num" data-target="5">0</span><small>Certifications</small></div>
-                    <div class="stat-divider"></div>
-                    <div class="stat"><span class="stat-num" data-target="3">0</span><small>Stages</small></div>
-                </div>
+        <div class="container">
+            <div class="hero-top">
+                <span class="mono-tag"><span class="dot"></span> AI / Data Science Engineer — Fès, Maroc</span>
             </div>
-            <div class="hero-image">
-                <div class="img-wrapper">
+            <h1 class="hero-title">
+                Je transforme<br>la <span class="outline">donnée</span> en <em>intelligence.</em>
+            </h1>
+            <div class="hero-bottom">
+                <div class="hero-lead">
+                    <p>
+                        Ingénieur spécialisé en <strong>Machine Learning</strong>, <strong>GenAI</strong> et <strong>MLOps</strong>.
+                        Je maîtrise l'ensemble du cycle — de la recherche au déploiement de modèles en production
+                        (LLMs, RAG, Computer Vision).
+                    </p>
+                    <div class="cta-group">
+                        <a href="#projects" class="btn btn-primary magnetic">Explorer mes projets <i class="fas fa-arrow-down"></i></a>
+                        <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" class="btn btn-ghost magnetic"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/abdelhafid-masrour" target="_blank" class="btn btn-ghost magnetic"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="hero-portrait">
                     <img src="photo.png" alt="Abdelhafid Masrour">
+                    <div class="portrait-tag mono">MASTER ML · 2026</div>
                 </div>
             </div>
         </div>
-        <a href="#expertise" class="scroll-hint" aria-label="Défiler"><i class="fas fa-chevron-down"></i></a>
     </section>
 
-    <!-- ===== MARQUEE COMPÉTENCES ===== -->
+    <!-- ===== STATS BAND ===== -->
+    <section class="stats-band">
+        <div class="container stats-grid">
+            <div class="stat">
+                <span class="stat-num" data-target="8" data-suffix="+">0</span>
+                <span class="stat-label mono">Projets réalisés</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-target="5" data-suffix="">0</span>
+                <span class="stat-label mono">Certifications</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-target="3" data-suffix="">0</span>
+                <span class="stat-label mono">Stages effectués</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num" data-target="91" data-suffix="%">0</span>
+                <span class="stat-label mono">Meilleur score AUC</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
     <div class="marquee">
         <div class="marquee-track">
-            <span>Python</span><span>•</span><span>TensorFlow</span><span>•</span><span>PyTorch</span><span>•</span>
-            <span>LangChain</span><span>•</span><span>RAG</span><span>•</span><span>Ollama</span><span>•</span>
-            <span>FastAPI</span><span>•</span><span>Kubernetes</span><span>•</span><span>MLflow</span><span>•</span>
-            <span>Docker</span><span>•</span><span>Neo4j</span><span>•</span><span>OpenCV</span><span>•</span>
-            <span>Python</span><span>•</span><span>TensorFlow</span><span>•</span><span>PyTorch</span><span>•</span>
-            <span>LangChain</span><span>•</span><span>RAG</span><span>•</span><span>Ollama</span><span>•</span>
-            <span>FastAPI</span><span>•</span><span>Kubernetes</span><span>•</span><span>MLflow</span><span>•</span>
-            <span>Docker</span><span>•</span><span>Neo4j</span><span>•</span><span>OpenCV</span><span>•</span>
+            <span>Python</span><i class="fas fa-asterisk"></i><span>TensorFlow</span><i class="fas fa-asterisk"></i><span>PyTorch</span><i class="fas fa-asterisk"></i>
+            <span>LangChain</span><i class="fas fa-asterisk"></i><span>RAG</span><i class="fas fa-asterisk"></i><span>Ollama</span><i class="fas fa-asterisk"></i>
+            <span>FastAPI</span><i class="fas fa-asterisk"></i><span>Kubernetes</span><i class="fas fa-asterisk"></i><span>MLflow</span><i class="fas fa-asterisk"></i>
+            <span>Docker</span><i class="fas fa-asterisk"></i><span>Neo4j</span><i class="fas fa-asterisk"></i><span>OpenCV</span><i class="fas fa-asterisk"></i>
+            <span>Python</span><i class="fas fa-asterisk"></i><span>TensorFlow</span><i class="fas fa-asterisk"></i><span>PyTorch</span><i class="fas fa-asterisk"></i>
+            <span>LangChain</span><i class="fas fa-asterisk"></i><span>RAG</span><i class="fas fa-asterisk"></i><span>Ollama</span><i class="fas fa-asterisk"></i>
+            <span>FastAPI</span><i class="fas fa-asterisk"></i><span>Kubernetes</span><i class="fas fa-asterisk"></i><span>MLflow</span><i class="fas fa-asterisk"></i>
+            <span>Docker</span><i class="fas fa-asterisk"></i><span>Neo4j</span><i class="fas fa-asterisk"></i><span>OpenCV</span><i class="fas fa-asterisk"></i>
         </div>
     </div>
 
@@ -93,215 +99,134 @@
     <section id="expertise" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="eyebrow">01 — Expertise</span>
-                <h2>Compétences Techniques</h2>
-                <p>Un profil complet couvrant l'ensemble du cycle de vie de la donnée, de la collecte au déploiement.</p>
+                <span class="eyebrow mono">01 / Expertise</span>
+                <h2>Compétences techniques</h2>
             </div>
 
             <div class="expertise-grid">
                 <div class="expert-card">
-                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <div class="card-top"><i class="fas fa-code"></i><span class="mono">001</span></div>
                     <h3>Langages</h3>
-                    <div class="tags">
-                        <span>Python</span><span>JAVA</span><span>C</span><span>SQL</span><span>Bash/Shell</span>
-                    </div>
+                    <div class="tags"><span>Python</span><span>JAVA</span><span>C</span><span>SQL</span><span>Bash/Shell</span></div>
                 </div>
-
                 <div class="expert-card">
-                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <div class="card-top"><i class="fas fa-brain"></i><span class="mono">002</span></div>
                     <h3>ML / DL / NLP</h3>
-                    <div class="tags">
-                        <span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span>
-                        <span>SAFAR (Arabic NLP)</span><span>TF-IDF</span><span>Information Retrieval</span>
-                    </div>
+                    <div class="tags"><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span><span>SAFAR (Arabic NLP)</span><span>TF-IDF</span><span>Information Retrieval</span></div>
                 </div>
-
                 <div class="expert-card">
-                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <div class="card-top"><i class="fas fa-robot"></i><span class="mono">003</span></div>
                     <h3>GenAI &amp; LLMs</h3>
-                    <div class="tags">
-                        <span>RAG</span><span>LangChain</span><span>Ollama</span>
-                        <span>AI Agents</span><span>Sentence-Transformers</span>
-                    </div>
+                    <div class="tags"><span>RAG</span><span>LangChain</span><span>Ollama</span><span>AI Agents</span><span>Sentence-Transformers</span></div>
                 </div>
-
                 <div class="expert-card">
-                    <div class="card-icon"><i class="fas fa-server"></i></div>
+                    <div class="card-top"><i class="fas fa-server"></i><span class="mono">004</span></div>
                     <h3>Backend &amp; Data</h3>
-                    <div class="tags">
-                        <span>FastAPI</span><span>Flask</span><span>SparkJava</span>
-                        <span>ChromaDB</span><span>Cassandra</span><span>Neo4j</span>
-                    </div>
+                    <div class="tags"><span>FastAPI</span><span>Flask</span><span>SparkJava</span><span>ChromaDB</span><span>Cassandra</span><span>Neo4j</span></div>
                 </div>
-
                 <div class="expert-card">
-                    <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="card-top"><i class="fas fa-chart-pie"></i><span class="mono">005</span></div>
                     <h3>Analyse &amp; Visualization</h3>
-                    <div class="tags">
-                        <span>Pandas</span><span>Numpy</span><span>Power BI</span><span>MDX</span><span>Grafana</span>
-                    </div>
+                    <div class="tags"><span>Pandas</span><span>Numpy</span><span>Power BI</span><span>MDX</span><span>Grafana</span></div>
                 </div>
-
                 <div class="expert-card">
-                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <div class="card-top"><i class="fas fa-tools"></i><span class="mono">006</span></div>
                     <h3>Outils &amp; DevOps</h3>
-                    <div class="tags">
-                        <span>Git</span><span>Docker</span><span>Kubernetes</span>
-                        <span>CI/CD (GitHub Actions)</span><span>MLflow</span><span>Prometheus</span><span>Maven</span>
-                    </div>
+                    <div class="tags"><span>Git</span><span>Docker</span><span>Kubernetes</span><span>CI/CD (GitHub Actions)</span><span>MLflow</span><span>Prometheus</span><span>Maven</span></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===== PROJETS ===== -->
-    <section id="projects" class="section bg-light">
+    <section id="projects" class="section bg-ink">
         <div class="container">
             <div class="section-header">
-                <span class="eyebrow">02 — Réalisations</span>
-                <h2>Projets</h2>
-                <p>Réalisations techniques et développement de solutions innovantes, de la recherche au déploiement.</p>
+                <span class="eyebrow mono">02 / Réalisations</span>
+                <h2>Projets sélectionnés</h2>
             </div>
 
-            <div class="projects-grid">
+            <div class="projects-list">
 
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="featured-tag">MLOps</span>
-                        <div class="project-links">
-                            <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-body">
+                <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" class="project-row">
+                    <span class="proj-idx mono">01</span>
+                    <div class="proj-main">
                         <h3>Système de Recommandation E-commerce</h3>
-                        <p class="project-desc">
-                            Déploiement "End-to-End" d'une architecture micro-services. Pipeline CI/CD complet (GitHub Actions),
-                            orchestration Kubernetes (Rolling Update zéro-downtime, Auto-scaling) et industrialisation MLOps via MLflow.
-                        </p>
-                        <ul class="tech-list"><li>FastAPI</li><li>Kubernetes</li><li>Docker</li><li>MLflow</li></ul>
+                        <p>Déploiement End-to-End micro-services. CI/CD (GitHub Actions), orchestration Kubernetes (Rolling Update, Auto-scaling) et industrialisation MLOps via MLflow.</p>
                     </div>
-                </div>
+                    <div class="proj-tags"><span>FastAPI</span><span>Kubernetes</span><span>MLflow</span></div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
 
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <i class="fas fa-chart-line"></i>
-                        <span class="featured-tag">AUC 0.91</span>
-                        <div class="project-links">
-                            <a href="https://github.com/MASROUR-Abdelhafid/MMCTR_Grandmaster_Solution" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
+                <a href="https://github.com/MASROUR-Abdelhafid/MMCTR_Grandmaster_Solution" target="_blank" class="project-row">
+                    <span class="proj-idx mono">02</span>
+                    <div class="proj-main">
+                        <h3>Prédiction de CTR Multimodale <span class="badge-inline">AUC 0.91</span></h3>
+                        <p>Challenge WWW 2025. Système hybride (Deep Interest Network Enhanced) pour micro-vidéos. Feature engineering avancé, entraînement GPU, surpassant les baselines.</p>
                     </div>
-                    <div class="project-body">
-                        <h3>Prédiction de CTR Multimodale</h3>
-                        <p class="project-desc">
-                            Challenge WWW 2025. Système de recommandation hybride (Deep Interest Network Enhanced) pour micro-vidéos.
-                            Feature Engineering avancé, entraînement GPU. Score AUC de 0.91, surpassant les baselines.
-                        </p>
-                        <ul class="tech-list"><li>Deep Learning</li><li>Python</li><li>RecSys</li></ul>
-                    </div>
-                </div>
+                    <div class="proj-tags"><span>Deep Learning</span><span>RecSys</span><span>Python</span></div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-comments"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/MASROUR-Abdelhafid/Prof-Bot-RAG" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-body">
+                <a href="https://github.com/MASROUR-Abdelhafid/Prof-Bot-RAG" target="_blank" class="project-row">
+                    <span class="proj-idx mono">03</span>
+                    <div class="proj-main">
                         <h3>Assistant RAG Local</h3>
-                        <p class="project-desc">
-                            Chatbot éducatif interrogeant des PDF de cours. Architecture 100% locale avec Ollama (Llama 3.2),
-                            LangChain et ChromaDB. Interface web Flask, garantissant la confidentialité des données.
-                        </p>
-                        <ul class="tech-list"><li>GenAI</li><li>Ollama</li><li>Flask</li></ul>
+                        <p>Chatbot éducatif interrogeant des PDF de cours. Architecture 100% locale avec Ollama (Llama 3.2), LangChain et ChromaDB. Interface web Flask.</p>
                     </div>
-                </div>
+                    <div class="proj-tags"><span>GenAI</span><span>Ollama</span><span>Flask</span></div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-magnifying-glass"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-body">
+                <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" class="project-row">
+                    <span class="proj-idx mono">04</span>
+                    <div class="proj-main">
                         <h3>Moteur de Recherche Sémantique (Arabe)</h3>
-                        <p class="project-desc">
-                            Développé "from scratch" en Java (Maven). Implémentation manuelle de TF-IDF et Similarité Cosinus.
-                            Pipeline NLP avancé (SAFAR) optimisé pour l'arabe. API REST avec SparkJava.
-                        </p>
-                        <ul class="tech-list"><li>Java</li><li>NLP</li><li>SparkJava</li></ul>
+                        <p>Développé "from scratch" en Java (Maven). Implémentation manuelle de TF-IDF et Similarité Cosinus. Pipeline NLP avancé (SAFAR). API REST SparkJava.</p>
                     </div>
-                </div>
+                    <div class="proj-tags"><span>Java</span><span>NLP</span><span>SparkJava</span></div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-image"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/MASROUR-Abdelhafid/Image-Processing-Project" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-body">
+                <a href="https://github.com/MASROUR-Abdelhafid/Image-Processing-Project" target="_blank" class="project-row">
+                    <span class="proj-idx mono">05</span>
+                    <div class="proj-main">
                         <h3>Image Processing</h3>
-                        <p class="project-desc">
-                            Amélioration (filtres), détection de contours (Canny, Sobel), analyse de Fourier et morphologie
-                            mathématique. Extraction de points clés (Harris, SUSAN) et Hough Transform.
-                        </p>
-                        <ul class="tech-list"><li>OpenCV</li><li>Python</li><li>Fourier</li></ul>
+                        <p>Filtres, détection de contours (Canny, Sobel), analyse de Fourier, morphologie mathématique. Extraction de points clés (Harris, SUSAN) et Hough Transform.</p>
                     </div>
-                </div>
+                    <div class="proj-tags"><span>OpenCV</span><span>Python</span><span>Fourier</span></div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-face-smile"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-body">
+                <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" class="project-row">
+                    <span class="proj-idx mono">06</span>
+                    <div class="proj-main">
                         <h3>Reconnaissance d'Émotions (Tweets)</h3>
-                        <p class="project-desc">
-                            Modèle NLP (LSTM bidirectionnel) sous TensorFlow pour classifier les émotions dans les tweets.
-                            Prétraitement complet : tokenisation, vectorisation et padding des séquences.
-                        </p>
-                        <ul class="tech-list"><li>TensorFlow</li><li>NLP</li><li>LSTM</li></ul>
+                        <p>Modèle NLP (LSTM bidirectionnel) sous TensorFlow. Prétraitement complet : tokenisation, vectorisation et padding des séquences.</p>
                     </div>
-                </div>
+                    <div class="proj-tags"><span>TensorFlow</span><span>NLP</span><span>LSTM</span></div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-house"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/MASROUR-Abdelhafid/pricePrediction" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-body">
+                <a href="https://github.com/MASROUR-Abdelhafid/pricePrediction" target="_blank" class="project-row">
+                    <span class="proj-idx mono">07</span>
+                    <div class="proj-main">
                         <h3>Analyse Prédictive Immobilier</h3>
-                        <p class="project-desc">
-                            Modélisation du prix des biens immobiliers (Régression, XGBoost). Évaluation rigoureuse via
-                            RMSE, MAE, R² et visualisation des données pour l'interprétation des résultats.
-                        </p>
-                        <ul class="tech-list"><li>XGBoost</li><li>Regression</li><li>Data Viz</li></ul>
+                        <p>Modélisation du prix des biens immobiliers (Régression, XGBoost). Évaluation rigoureuse via RMSE, MAE, R² et visualisation des données.</p>
                     </div>
-                </div>
+                    <div class="proj-tags"><span>XGBoost</span><span>Regression</span><span>Data Viz</span></div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-solar-panel"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-body">
+                <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" class="project-row">
+                    <span class="proj-idx mono">08</span>
+                    <div class="proj-main">
                         <h3>Prédiction Énergie Solaire &amp; Éolienne</h3>
-                        <p class="project-desc">
-                            Prédiction de la production d'énergie via Extreme Learning Machine (ELM) et Back Propagation (BP).
-                            Traitement de séries temporelles météorologiques, optimisation des hyperparamètres (RMSE, MAE, MSE).
-                        </p>
-                        <ul class="tech-list"><li>ELM</li><li>Time Series</li><li>Forecasting</li></ul>
+                        <p>Extreme Learning Machine (ELM) et Back Propagation (BP). Séries temporelles météorologiques, optimisation des hyperparamètres (RMSE, MAE, MSE).</p>
                     </div>
-                </div>
+                    <div class="proj-tags"><span>ELM</span><span>Time Series</span><span>Forecasting</span></div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
 
             </div>
         </div>
@@ -311,70 +236,50 @@
     <section id="certifications" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="eyebrow">03 — Validation</span>
+                <span class="eyebrow mono">03 / Validation</span>
                 <h2>Certifications</h2>
-                <p>Validations de compétences et apprentissage continu auprès d'organismes reconnus.</p>
             </div>
-            <div class="expertise-grid">
-                <div class="cert-card">
-                    <h3><i class="fas fa-certificate"></i> Oracle Cloud</h3>
-                    <p>Infrastructure 2025 AI Foundations Associate</p>
-                </div>
-                <div class="cert-card">
-                    <h3><i class="fas fa-certificate"></i> TensorFlow</h3>
-                    <p>Tweet Emotion Recognition (Coursera)</p>
-                </div>
-                <div class="cert-card">
-                    <h3><i class="fas fa-certificate"></i> IBM</h3>
-                    <p>Tools for Data Science (Coursera)</p>
-                </div>
-                <div class="cert-card">
-                    <h3><i class="fas fa-certificate"></i> Neo4j</h3>
-                    <p>Graph Data Science Fundamentals</p>
-                </div>
-                <div class="cert-card">
-                    <h3><i class="fas fa-certificate"></i> Quantium</h3>
-                    <p>Data Analytics Job Simulation (Forage)</p>
-                </div>
+            <div class="cert-grid">
+                <div class="cert-card"><span class="cert-org mono">ORACLE</span><h3>Oracle Cloud Infrastructure 2025 AI Foundations Associate</h3></div>
+                <div class="cert-card"><span class="cert-org mono">COURSERA</span><h3>Tweet Emotion Recognition with TensorFlow</h3></div>
+                <div class="cert-card"><span class="cert-org mono">IBM</span><h3>Tools for Data Science (Coursera)</h3></div>
+                <div class="cert-card"><span class="cert-org mono">NEO4J</span><h3>Graph Data Science Fundamentals</h3></div>
+                <div class="cert-card"><span class="cert-org mono">FORAGE</span><h3>Data Analytics Job Simulation (Quantium)</h3></div>
             </div>
         </div>
     </section>
 
     <!-- ===== PARCOURS ===== -->
-    <section id="experience" class="section bg-light">
+    <section id="experience" class="section bg-ink">
         <div class="container">
             <div class="section-header">
-                <span class="eyebrow">04 — Parcours</span>
-                <h2>Expérience &amp; Formation</h2>
+                <span class="eyebrow mono">04 / Parcours</span>
+                <h2>Expérience &amp; formation</h2>
             </div>
             <div class="split-layout">
 
                 <div class="column">
-                    <h3 class="column-title"><i class="fas fa-briefcase"></i> Expériences Professionnelles</h3>
+                    <h3 class="column-title"><i class="fas fa-briefcase"></i> Expériences</h3>
 
                     <div class="resume-item highlight">
-                        <span class="date">2026 — Stage PFE</span>
+                        <span class="date mono">2026 — Stage PFE</span>
                         <h4>Stage de Fin d'Études — AI / Data Science</h4>
                         <span class="company">Alexsys Solution</span>
                         <p>Projet de fin d'études en intelligence artificielle : conception et développement de solutions ML / Data Science en environnement professionnel.</p>
                     </div>
 
                     <div class="resume-item">
-                        <span class="date">Juin 2025 - Août 2025</span>
+                        <span class="date mono">Juin 2025 — Août 2025</span>
                         <h4>Stage — Web Scraping &amp; Data Science</h4>
                         <span class="company">SMART MAINT SARL AU, Casablanca</span>
                         <p>Analyse du potentiel de marché pour les formations en ligne en maintenance et fiabilité des équipements industriels.</p>
                     </div>
 
                     <div class="resume-item">
-                        <span class="date">Avr. 2024 - Juin 2024</span>
+                        <span class="date mono">Avr. 2024 — Juin 2024</span>
                         <h4>Stage — Software Engineer</h4>
                         <span class="company">FS Tetouan, Tétouan</span>
-                        <p>Réalisation d'une plateforme numérique centralisée pour gérer les activités scolaires d'un établissement.</p>
-                        <ul class="resume-bullets">
-                            <li>Numérisation des processus administratifs et pédagogiques.</li>
-                            <li>Facilitation de la communication et renforcement de la traçabilité.</li>
-                        </ul>
+                        <p>Plateforme numérique centralisée de gestion des activités scolaires : numérisation des processus administratifs et pédagogiques.</p>
                     </div>
                 </div>
 
@@ -382,13 +287,13 @@
                     <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Éducation</h3>
 
                     <div class="resume-item">
-                        <span class="date">2024 - 2026</span>
+                        <span class="date mono">2024 — 2026</span>
                         <h4>Master Machine Learning Avancé et Applications</h4>
                         <span class="company">FSDM, Fès</span>
                     </div>
 
                     <div class="resume-item">
-                        <span class="date">2021 - 2024</span>
+                        <span class="date mono">2021 — 2024</span>
                         <h4>Licence LST Génie Informatique</h4>
                         <span class="company">FST, Fès</span>
                     </div>
@@ -398,26 +303,33 @@
         </div>
     </section>
 
-    <!-- ===== FOOTER / CONTACT ===== -->
+    <!-- ===== CONTACT ===== -->
     <footer id="contact">
         <div class="container footer-content">
-            <span class="eyebrow">05 — Contact</span>
-            <h2>Travaillons ensemble</h2>
-            <p class="footer-tagline">Ouvert aux opportunités et collaborations dans l'IA et la Data Science.</p>
+            <span class="eyebrow mono">05 / Contact</span>
+            <h2 class="footer-title">Construisons<br>quelque chose <em>ensemble.</em></h2>
+            <a href="mailto:abdelhafidmasrour@gmail.com" class="email-link">abdelhafidmasrour@gmail.com <i class="fas fa-arrow-up-right-from-square"></i></a>
 
-            <a href="mailto:abdelhafidmasrour@gmail.com" class="email-link">abdelhafidmasrour@gmail.com</a>
-
-            <div class="contact-details">
-                <span><i class="fas fa-phone"></i> +212 6 53 83 67 22</span>
-                <span><i class="fas fa-location-dot"></i> Atlas, Fès, Maroc — 30000</span>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="mono footer-label">Téléphone</span>
+                    <p>+212 6 53 83 67 22</p>
+                </div>
+                <div class="footer-col">
+                    <span class="mono footer-label">Localisation</span>
+                    <p>Atlas, Fès, Maroc — 30000</p>
+                </div>
+                <div class="footer-col">
+                    <span class="mono footer-label">Réseaux</span>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/abdelhafid-masrour" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:abdelhafidmasrour@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/abdelhafid-masrour" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/MASROUR-Abdelhafid" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:abdelhafidmasrour@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="copyright">&copy; 2026 Abdelhafid Masrour. Tous droits réservés.</div>
+            <div class="copyright mono">© 2026 ABDELHAFID MASROUR — TOUS DROITS RÉSERVÉS</div>
         </div>
     </footer>
 
@@ -426,9 +338,9 @@
         const header = document.querySelector('.header');
         window.addEventListener('scroll', () => {
             const h = document.documentElement;
-            const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
-            progress.style.width = scrolled + '%';
-            header.classList.toggle('scrolled', window.scrollY > 50);
+            const sc = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
+            progress.style.width = sc + '%';
+            header.classList.toggle('scrolled', window.scrollY > 40);
         });
 
         const io = new IntersectionObserver((entries) => {
@@ -439,10 +351,10 @@
                     io.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.expert-card, .project-card, .cert-card, .resume-item').forEach((el, i) => {
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.expert-card, .project-row, .cert-card, .resume-item, .section-header').forEach((el, i) => {
             el.classList.add('reveal');
-            el.dataset.delay = (i % 4) * 80;
+            el.dataset.delay = (i % 4) * 70;
             io.observe(el);
         });
 
@@ -452,17 +364,18 @@
                 if (!entry.isIntersecting) return;
                 const el = entry.target;
                 const target = +el.dataset.target;
+                const suffix = el.dataset.suffix || '';
                 let cur = 0;
-                const step = Math.max(1, Math.round(target / 30));
+                const step = Math.max(1, Math.round(target / 35));
                 const tick = () => {
                     cur += step;
-                    if (cur >= target) { el.textContent = target + '+'; }
+                    if (cur >= target) { el.textContent = target + suffix; }
                     else { el.textContent = cur; requestAnimationFrame(tick); }
                 };
                 tick();
                 cObs.unobserve(el);
             });
-        }, { threshold: 0.5 });
+        }, { threshold: 0.6 });
         counters.forEach(c => cObs.observe(c));
 
         if (window.matchMedia('(hover: hover)').matches) {
@@ -471,24 +384,9 @@
                     const r = btn.getBoundingClientRect();
                     const x = e.clientX - r.left - r.width / 2;
                     const y = e.clientY - r.top - r.height / 2;
-                    btn.style.transform = `translate(${x * 0.25}px, ${y * 0.35}px)`;
+                    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.3}px)`;
                 });
                 btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
-            });
-        }
-
-        const imgWrap = document.querySelector('.img-wrapper');
-        if (imgWrap && window.matchMedia('(hover: hover)').matches) {
-            imgWrap.addEventListener('mousemove', (e) => {
-                const r = imgWrap.getBoundingClientRect();
-                const rx = ((e.clientY - r.top) / r.height - 0.5) * -12;
-                const ry = ((e.clientX - r.left) / r.width - 0.5) * 12;
-                imgWrap.style.setProperty('--rx', rx + 'deg');
-                imgWrap.style.setProperty('--ry', ry + 'deg');
-            });
-            imgWrap.addEventListener('mouseleave', () => {
-                imgWrap.style.setProperty('--rx', '0deg');
-                imgWrap.style.setProperty('--ry', '0deg');
             });
         }
     </script>
